@@ -1,0 +1,6 @@
+class HTTPResponse{
+    constructor(socket){
+        
+
+    }
+}

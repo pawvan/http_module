@@ -1,0 +1,6 @@
+class HTTPRequest{
+    constructor(rawData){
+        
+
+    }
+}
