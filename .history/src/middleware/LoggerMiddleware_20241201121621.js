@@ -1,6 +1,7 @@
 /*!
  * This code is belongs to Pawvan
  * 
+ * 
  * Rules:
  * 1. You can use, modify, and distribute this code freely for non-commercial purposes.
  * 2. Attribution must be provided in any derived works.
@@ -14,11 +15,12 @@
  *10. For more details, please contact: [pawanpediredla@gmail.com]
  */
 
- class LoggerMiddleware {
-    static handle(req, res, next) {
-        console.log(`${req.method} ${req.url}`);
-        next(); // This is important to pass control to the next middleware.
+ var n 
+
+class LoggerMiddleware{
+    
+    static handle(req,res,next){
+        console.log(`${req.method} ${res.url}`);
     }
 }
-
-module.exports = LoggerMiddleware;
+module.exports =LoggerMiddleware
