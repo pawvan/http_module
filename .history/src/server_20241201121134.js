@@ -37,4 +37,4 @@ server.on('GET','/about',(req,res)=>{
 server.on('GET','/index.html',(req,res)=>{
 StaticFileHandler.serveFile(config.staticDir+'index.html',res)
 })
-server.listen(config.port);
+server.

@@ -14,6 +14,7 @@
  * 9. You may not use this code in any harmful or malicious way.
  *10. For more details, please contact: [pawanpediredla@gmail.com]
  */
+
  const HTTPServer  = reqire('./core/HTTPServer.js')
  const LoggerMiddleware = require('./middleware/LoggerMiddleware');
  const BodyParserMiddleware = require('./middleware/BodyParserMiddleware');
@@ -26,15 +27,5 @@ server.use(BodyParserMiddleware.handle);
 //we need to define routes;
 
 server.on('GET' ,'/',(req,res)=>{
-    res.writeHead(200);
-    res.end("hello world");
+    
 })
-server.on('GET','/about',(req,res)=>{
-    res,writeHead(200);
-    res.end('about page');
-})
-// this is the server static fi;es 
-server.on('GET','/index.html',(req,res)=>{
-StaticFileHandler.serveFile(config.staticDir+'index.html',res)
-})
-server.listen(config.port);
