@@ -30,10 +30,6 @@
         if(route && route[method])[
             route[method](req,res)
         ]
-   else{
-    res.writeHead(404);
-    res.end('not found');
-   }
     }
  }
  module.exports =Router;

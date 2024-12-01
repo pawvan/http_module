@@ -14,26 +14,10 @@
  * 9. You may not use this code in any harmful or malicious way.
  *10. For more details, please contact: [pawanpediredla@gmail.com]
  */
- class Router {
-    constructor(){
-        this.routes={};
-        
-    }addRoute(method,path,handler){
-            if(!this.routes[path]) this.routes[path]={}
-
-
-        
+class LoggerMiddleware{
+    
+    static handle(req,res,next){
+        console.log(`${req.method} ${req.url}`);
     }
-    handleRequest(res,res){
-        const {method,url} =req;
-        const route = this.routes[url];
-        if(route && route[method])[
-            route[method](req,res)
-        ]
-   else{
-    res.writeHead(404);
-    res.end('not found');
-   }
-    }
- }
- module.exports =Router;
+}
+module.exports =LoggerMiddleware

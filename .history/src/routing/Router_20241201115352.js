@@ -25,15 +25,7 @@
         
     }
     handleRequest(res,res){
-        const {method,url} =req;
-        const route = this.routes[url];
-        if(route && route[method])[
-            route[method](req,res)
-        ]
-   else{
-    res.writeHead(404);
-    res.end('not found');
-   }
+        const {method,url} ==req;
     }
  }
  module.exports =Router;

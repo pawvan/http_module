@@ -28,12 +28,8 @@
         const {method,url} =req;
         const route = this.routes[url];
         if(route && route[method])[
-            route[method](req,res)
+            route[method]
         ]
-   else{
-    res.writeHead(404);
-    res.end('not found');
-   }
     }
  }
  module.exports =Router;
